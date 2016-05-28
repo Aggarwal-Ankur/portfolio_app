@@ -8,13 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MyAppButton" >
+    <style name="MyAppButton" parent="@style/Widget.AppCompat.Button.Colored" >
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@drawable/custom_button</item>
         <item name="android:layout_margin">8dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:onClick">appButtonClickListener</item>
+        <item name="android:theme">@style/CustomAccentOverlay</item>
+
+    </style>
+
+    <style name="CustomAccentOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
     </style>
 
 
