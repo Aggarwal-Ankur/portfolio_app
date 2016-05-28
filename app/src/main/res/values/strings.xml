@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Portfolio App</string>
+    <string name="creator_name">Ankur Aggarwal</string>
+    <string name="title">My Portfolio Apps</string>
+    <string name="first_app">Popular Movies</string>
+    <string name="second_app">Stock Hawk</string>
+    <string name="third_app">Build it bigger</string>
+    <string name="fourth_app">Make Your App Material</string>
+    <string name="fifth_app">Go Ubiquitous</string>
+    <string name="sixth_app">Capstone</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_portfolio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aggarwalankur.myportfolioapp.PortfolioActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:text="@string/creator_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="479dp"
+        android:id="@+id/creator_name_tv"
+        app:layout_constraintRight_toRightOf="@+id/activity_portfolio"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_portfolio"
+        android:layout_marginBottom="16dp"
+        tools:layout_constraintBottom_creator="0" />
+
+    <TextView
+        android:text="@string/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_tv"
+        android:layout_margin="16dp"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_portfolio"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/activity_portfolio"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintRight_toRightOf="@+id/activity_portfolio"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="0" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:layout_margin="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_portfolio"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintRight_toRightOf="@+id/activity_portfolio"
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintBottom_toTopOf="@+id/creator_name_tv"
+        tools:layout_constraintBottom_creator="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/button_row_1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="@string/first_app"
+                android:id="@+id/app1_button"
+                style="@style/MyAppButton"/>
+
+            <Button
+                android:text="@string/second_app"
+                android:id="@+id/app2_button"
+                style="@style/MyAppButton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/button_row_2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="@string/third_app"
+                android:id="@+id/app3_button"
+                style="@style/MyAppButton"/>
+
+            <Button
+                android:text="@string/fourth_app"
+                android:id="@+id/app4_button"
+                style="@style/MyAppButton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/button_row_3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="@string/fifth_app"
+                android:id="@+id/app5_button"
+                style="@style/MyAppButton"/>
+
+            <Button
+                android:text="@string/sixth_app"
+                android:id="@+id/app6_button"
+                style="@style/MyAppButton"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
